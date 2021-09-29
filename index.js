@@ -1,4 +1,4 @@
-/* undrmed by FDs *//* SCRIPT BY BERNKASTEL */
+/* SCRIPT BY YOUR MOM */
 'use strict'
 //DONT TOUCH ANYTHING UNDER HERE =============================
 const JOB_ARCHER =5;
@@ -1270,7 +1270,7 @@ module.exports = function archer(mod) {
         if (job == JOB_ARCHER && event.id == 600502 && VELIKALERT && VELIKPREALERT >0) {
             clearTimeout(velikTimer);
             velikTimer = setTimeout(function () {
-                mod.toClient('S_WHISPER', 3, {
+                mod.toClient('S_WHISPER', 4, {
                     gameId: cid,
                     isWorldEventTarget: 0,
                     gm: 0,
@@ -1298,7 +1298,7 @@ module.exports = function archer(mod) {
         if (job == JOB_ARCHER && event.id == 600502 && VELIKALERT && VELIKPREALERT >0) {
             clearTimeout(velikTimer);
             velikTimer = setTimeout(function () {
-                mod.toClient('S_WHISPER', 3, {
+                mod.toClient('S_WHISPER', 4, {
                     gameId: cid,
                     isWorldEventTarget: 0,
                     gm: 0,
@@ -1414,7 +1414,7 @@ module.exports = function archer(mod) {
         }
         if (job == JOB_ARCHER && event.id == 600502 && VELIKALERT) {
             clearTimeout(velikTimer);
-            mod.toClient('S_WHISPER', 3, {
+            mod.toClient('S_WHISPER', 4, {
                 gameId: cid,
                 isWorldEventTarget: 0,
                 gm: 0,
@@ -2177,7 +2177,7 @@ disabSkill[(S_ARROWRAIN +50)] = false;
         if (!enabled) return;
         if (event.gameId === cid) {
             if (SNIPERALERT && !sniperState && event.skill.id != S_SNIPEREYE) {
-                mod.toClient('S_WHISPER', 3, {
+                mod.toClient('S_WHISPER', 4, {
                     gameId: cid,
                     isWorldEventTarget: 0,
                     gm: 0,
